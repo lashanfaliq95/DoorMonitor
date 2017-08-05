@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lasha.doormonitor.LoginActivity">
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton"
+        android:layout_marginTop="86dp"
+        android:layout_alignTop="@+id/responseText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="720px"
+        android:layout_height="75px"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nameText"
+        android:hint="Name"
+        android:background="#b9b9b9"
+        android:textColor="#03003c"
+        android:layout_marginBottom="45dp"
+        android:clickable="false"
+        android:textSize="18sp"
+        android:layout_above="@+id/responseText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="720px"
+        android:layout_height="75px"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/responseText"
+        android:background="#b9b9b9"
+        android:textColor="#03003c"
+        android:hint="Response"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Waiting for server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:background="#fefefe"
+        android:textColor="#000000"
+        android:layout_marginBottom="37dp"
+        android:layout_above="@+id/nameText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
